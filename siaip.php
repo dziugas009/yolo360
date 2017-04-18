@@ -7,5 +7,5 @@
 			echo $metai. "<br>";
 			$count ++;
 		}
-		$metai++;
+		++$metai;
 	}
