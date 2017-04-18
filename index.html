@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+  .jumbotron {text-align: center;}
+  </style>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Let's have Fun</h1>      
+    <button type="button" class="panel-button" data-panelid="panel1" class="btn btn-default">#btn1</button>
+    <button type="button" class="panel-button" data-panelid="panel2" class="btn btn-default">#btn2</button>
+    <button type="button" class="panel-button" data-panelid="panel3" class="btn btn-default">#btn3</button>
+    <button type="button" class="panel-button" data-panelid="panel4" class="btn btn-default">#btn4</button>
+  </div>
+  <div class="col-xs-3">
+  <div id="panel1" class="panel panel-primary">
+  <div class="panel-heading">
+   #panel1
+  </div>
+  <div class="panel-body"> Contet 
+  </div>
+
+  </div>
+  </div>
+  <div class="col-xs-3">
+  <div id="panel2" class="panel panel-primary">
+  <div class="panel-heading">
+   #panel2
+  </div>
+  <div class="panel-body"> Contet 
+  </div>
+
+  </div>
+  </div>
+  <div class="col-xs-3">
+  <div id="panel3" class="panel panel-primary">
+  <div class="panel-heading">
+   #panel3
+  </div>
+  <div class="panel-body"> Contet 
+  </div>
+
+  </div>
+  </div>
+  <div class="col-xs-3">
+  <div id="panel4" class="panel panel-primary">
+  <div class="panel-heading">
+   #panel4
+  </div>
+  <div class="panel-body"> Contet 
+  </div>
+
+  </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(function(){
+         $('.panel-button').on('click', function(){
+        var panelId = $(this).attr('data-panelid');
+             $('#'+panelId).toggle();
+             $('#'+panelId + ' .panel-body').html('Hello');
+     });
+    
+    });
+    
+      
+</script>
+   
+  </body>
+</html>
